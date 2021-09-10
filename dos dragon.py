@@ -5,6 +5,17 @@ def slowtype(t):
 	   sys.stdout.flush()
 	   time.sleep(6/100)
 os.system('clear')
+print(\033[31m"""
+.----. .----.   .--.   .---.  .----. .-. .-.
+| {}  \| {}  } / {} \ /   __}/  {}  \|  `| |
+|     /| .-. \/  /\  \\  {_ }\      /|| \   |
+`----' `-' `-'`-'  `-' `---'  `----' `-' `-'
+ _  _    ___  _  _   
+| || |  / _ \| || |  
+| || |_| | | | || |_ 
+|__   _| |_| |__   _|
+   |_|  \___/   |_|  
+                     '""")
 slowtype("\033[31mWelcom To DDOS Attack py Mr Dragon")
 ip =input ("\033[33;1mEnter ip website : ")
 try:
