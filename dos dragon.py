@@ -5,7 +5,7 @@ def slowtype(t):
 	   sys.stdout.flush()
 	   time.sleep(6/100)
 os.system('clear')
-print(\033[31m"""
+print("""\033[31m
 .----. .----.   .--.   .---.  .----. .-. .-.
 | {}  \| {}  } / {} \ /   __}/  {}  \|  `| |
 |     /| .-. \/  /\  \\  {_ }\      /|| \   |
